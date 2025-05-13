@@ -1,0 +1,147 @@
+
+.navbar{
+    background-color: rgb(54, 42, 218);
+    height: 80px;
+    width: 100%;
+    font-weight: bold;
+   }
+   .logo{
+    color:white;
+    font-size: 2rem;
+    padding: 0 2%;
+    line-height: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   }
+   .navbar ul{
+    float: right;
+    margin-right: 20px;
+    
+   }
+   .navbar ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px
+   }
+   .navbar a{
+    color:white;
+    text-decoration: none;
+    text-transform: Uppercase;
+    }
+    /* Change the color of the link when hovered */
+    a:hover{
+        color:rgb(206, 86, 190);
+        text-decoration:underline;
+    }
+
+    /* Add an active class to the current page link*/
+    .navbar a.active{
+        background-color: rgb(3, 3, 61) ;
+        color: white;
+    }
+    /* Hide the link when the screen in on small devices */
+    .navbar .icon{
+        display:none
+    }
+/*responsive design*/
+    @media screen and (max-width:600px){ /* For small screens like phones*/
+        .navbar a:not(:first-child){display:none} /* Hide the list of links expect the first one*/
+        .navbar a.icon{
+            float:right;
+            display:block; /* Show the icon */
+        }
+    }
+    /* When the user clicks on the icon, show the links*/
+    @media screen and (max-width:800px){
+        .navbar .responsive {position:relative;} /* The responisve class is added to the navigation
+        bar with Javascript when the user clicks on the icon. Display the links vertically instead of 
+        horiozontally*/
+        .navbar .responsive a.icon{
+            position:block;
+
+        }
+        .navbar .responsive a{
+            float:none;
+            position:relative; /* The links are displayed vertically*/
+            line-height: 30px; /* The height of the links*/
+            display:flex; /* Display the links vertically*/
+            width:100%;
+            height: auto; /* Align the text to the left*/
+            background-color:rgb(3, 45, 65);
+            top: 30px;
+            left:0;
+            text-align: center;
+              }
+       .navbar ul{
+            background-color:rgb(3, 45, 65);
+            margin-bottom: 5px;
+            margin-top: 10px;
+            float: left;
+        }
+        .navbar ul li {
+            display: flex;
+            align-items: vertical;
+            justify-content: center;
+            line-height: 50px;
+            margin: 0 20px
+        }
+    }
+    .heroimage{
+        height: 200px;
+        width: 100%;
+        margin:0;
+    }
+
+    .container{
+    background-color: rgb(48, 48, 226);
+    color: white;
+    text-align: center;
+    padding: 1%;
+    margin-top: 0px;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    }
+img{
+    max-width: 100%;
+    height:auto;
+    padding: 0%;
+    margin-top:0%;
+    position: static;
+}
+
+footer{
+    background-color: rgb(226, 178, 233);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.Titles{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 20px;
+
+}
+
+.h2{
+    text-decoration: underline;
+    text-align:center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+            }
+
+
+
+#form{
+    background-color: rgb(152, 209, 235);
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-style: solid black;
+    border-width: 2px;
+}
