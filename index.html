@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+          <meta name="viewport" content=" width=device width, initial-scale=1.0">
+          <Title>Tari School</Title>
+          <link rel="stylesheet" href="WK4HM.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+            <nav class="navbar" id="topNav">
+            <label class="logo">Tari School</label>
+                <ul>
+                    <li><a href="#h1">Home</a></li>
+                    <li><a href="#Contacts">Contact us</a></li>
+                    <li><a href="#form">Register</a></li> 
+                    <li><a href="#Courses">Courses</a></li>
+                    <li><a href="javascript:void(0)" class="Icon" onclick="myFunction()"> <i class="fa fa-bars"></i> </a></li>
+                    
+                </ul>
+            </nav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("topNav");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+            }
+        </script>
+        <div class="heroImage">
+            <img src="https://images.pexels.com/photos/4144294/pexels-photo-4144294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Online class"> </div>
+                
+        <div class="container">
+            <h1 id="h1">Welcome to Tari School</h1>
+            <p>Interested in learning about software enginnering and embark on your journey 
+                <br> to developing your career? <br>
+                <br> Join us at Tari School and learn from the best in the industry. <br>
+            </p>
+       </div>
+    
+        <img src="https://media.istockphoto.com/id/1663279091/photo/two-young-colleagues-working-together-at-modern-office.jpg?s=612x612&w=is&k=20&c=2v_Ohut_ojQWnK4jsoFb5WrPUBV-MRH94JCVMyS7fZE="
+            alt="Image of students in class">
+        <section>
+            <h2 class="h2">We offer the following courses</h2>
+            <ol type="I">
+                <li> Database Design</li>
+                <li>UX-UI design</li>
+                <li>Machine learning</li>
+                <li>Human centered design</li>
+            </ol>
+            
+            <div>
+                <iframe width="336" height="597" src="https://www.youtube.com/embed/RqORrMpzad4" title="4 Things Software Engineers Actually Do" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <video scr="  " width="600" height="300" controls autoplay muted> </video> -->
+
+            </div>
+        </section>
+        <section>
+            <h2 class="h2">Contact our community support team</h2>
+            <table border="1px">
+                <tr>
+                    <th> Name</th>
+                    <th> Address</th>
+                    <th> Mobile</th>
+                    <th> Email</th>
+                </tr>
+                <tr>
+                    <td>James Abdalla</td>
+                    <td>Nairobi office</td>
+                    <td>0123456789</td>
+                    <td>Jabdalla@tarischool.org</td>
+                </tr>
+                <tr>
+                    <td>Cate Wagaki</td>
+                    <td>Nakuru office</td>
+                    <td>0134567890</td>
+                    <td>Cwagaki@tarischool.org</td>
+                </tr>
+                <tr>
+                    <td>Eve Adam</td>
+                    <td>Mombasa office</td>
+                    <td>0145678901</td>
+                    <td>Eadam@tarischool.org</td>
+                </tr>
+                <tr>
+                    <td>Loni Kamau</td>
+                    <td>Kisumu office</td>
+                    <td>01556789012</td>
+                    <td>Lkamau@tarischool.org</td>
+                </tr>
+                <tr>
+                    <td>Jess Ndanu</td>
+                    <td>Embu office</td>
+                    <td>016567890123</td>
+                    <td>Jndanu@tarischool.org</td>
+                </tr>
+            </table>
+        </section>
+        <section id="form">
+            <h1 class="Titles">Register to enroll for our courses</h1>
+            <form action="" method="">
+                <Label for="Name"> Name </Label>
+                <input type="text" name="Name" id="Name" placeholder="Enter your name" required>
+                <br>
+                <label for="DOB">Date of birth</label>
+                <input type="date" name="DOB" id="DOB" min="1/1/2020" required>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required >
+                <br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" pattern="[a-z]{8}" minlength="6" required>
+                <br> <br>
+
+                    <div>Education level</div> <br>
+                    <label for="education">Education level</label>
+                    <select name="Education level" id="education">
+                        <option value="Highschool" >High school</option>
+                        <option value="Diploma">College Diploma</option>
+                        <option value="Certificate">College certificate</option>
+                        <option value="Graduate">Graduate </option>
+                        <option label="Post graduate" value="Graduate"></option>
+                    </select>
+                        <br> <br>
+                    <div> Select Courses</div> <br>
+                    <label for="HCD">Human Centered Design</label> 
+                    <input type="checkbox" name="HCD" id="HCD"> <br>
+                    <label for="DBD">Database Design</label>
+                    <input type="checkbox" name="DBD" id="DBD"> <br>
+                    <label for="ML">Machine Learning</label>
+                    <input type="checkbox" name="ML" id="ML"> <br>
+                    <label for="UXUI">UX\UI</label>
+                    <input type="checkbox" name="UX/UI" id="UXUI"> 
+                    <br> <br>
+                    <div>Intake</div> <br>
+                    <label for="Jan">January Intake</label>
+                    <input type="radio" name="Intake" value="January" id="Jan"> <br>
+                    <label for="May">May Intake</label>
+                    <input type="radio" name="Intake"  value="May" id="May"> <br>
+                    <label for="Sep">Sep Intake</label>
+                    <input type="radio" name="Intake" value="September" id="Sep"> <br>
+                
+                <input type="submit">
+
+            </form>
+        </section>
+
+        <footer>
+         <p> @right Tarischool 2025. <br> contact us email@tarischool.org</p>
+        </footer>
+    </body>
+</html>
